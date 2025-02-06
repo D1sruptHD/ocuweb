@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocuweb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>Welcome to My Website!</h1>
+        <p>Hi, I'm Oculine! This is my personal space where you can explore my repositories, projects, and socials, all in one place.</p>
+        <img src="assets/your-photo.jpg" alt="Oculine" class="profile-photo">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Project 1: my website</h3>
+            <p>This is the website you're currently browsing! Built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+            <a href="https://github.com/oculine/ocuweb" target="_blank">Check it out on GitHub</a>
+        </div>
+      
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Main Email: <a href="mailto:disrupt73@gmail.com">disrupt73@gmail.com</a></p>
+        <p>Second Email: <a href="mailto:disrupthd@outlook.hu">disrupthd@outlook.hu</a></p>
+        <p>YouTube: <a href="https://youtube.com/@oculine" target="_blank">youtube.com/@oculine</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Oculine. You can use this website wherever you want. just credit me.</p>
+    </footer>
+
+    <!-- Random Gradient Script -->
+    <script>
+        // Function to generate a random gradient
+        function randomGradient() {
+            const colors = [
+                ['#ff7e5f', '#feb47b'],
+                ['#6a11cb', '#2575fc'],
+                ['#ff9a8b', '#ff6a88', '#ff5f7e'],
+                ['#00c6ff', '#0072ff'],
+                ['#ffafbd', '#ffc3a0'],
+                ['#ff6a00', '#ee0979'],
+                ['#4facfe', '#00f2fe']
+            ];
+
+            // Choose a random gradient
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            const chosenGradient = colors[randomIndex];
+
+            // Apply the gradient to the body
+            document.body.style.background = `linear-gradient(to bottom, ${chosenGradient.join(', ')})`;
+        }
+
+        // Apply the random gradient when the page loads
+        window.onload = randomGradient;
+    </script>
+</body>
+  </html>
